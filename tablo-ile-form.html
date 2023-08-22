@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Form elemanları ile tablo hazırlama</title>
+    </head>
+    <body>
+        <form name="kayit"> <!--action="kayit.aspx" method="get"-->
+            <fieldset style="width: fit-content;">
+                <legend><b>Üye Kayıt Formu </b></legend>
+                <table>
+                    <tr>
+                        <td>
+                            <label for="adsoyad">Adı Soyadı :</label>
+                        </td>
+                        <td>
+                            <input 
+                                type="text"
+                                name="adsoyad" 
+                                id="adsoyad" 
+                                placeholder="Adınız ve Soyadınız"
+                                size="20"
+                                required />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="email">Eposta Adresi :</label>
+                        </td>
+                        <td>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email" 
+                                pattern=".+@gmail.com"
+                                placeholder="email adresiniz"
+                                size="20"
+                            />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="sifre">Şifreniz :</label>
+                        </td>
+                        <td>
+                                <input
+                                id="<sifre>"
+                                type="password"
+                                pattern="[0-9]{8-16}"
+                                placeholder="şifre belirleyiniz"
+                                title="En az 8, en çok 16 karakterli şifrenizi giriniz"
+                                autocomplete="new-password" 
+                                minlength="8"
+                                maxlength="16"
+                                size="20"
+                                required
+                                />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> Önerileriniz :</td>
+                        <td>
+                            <textarea name="oneri" 
+                                      id="oneri1"
+                                      cols="20" 
+                                      rows="5">
+                            </textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="Submit" value="Kaydet"><input type="reset" value="Sıfırla">
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+        </form>
+        <br>
+        <form name="OnayKutusu" action="">
+            <fieldset style="width:fit-content ;" >
+                <legend> Radio Button ve checkbox ile ilgili örnek form </legend>
+                    <table>
+                        <tr>
+                            <td>Medeni Durumu :</td>
+                            <td>
+                                <input type="radio" name="medenidurum" id="medenidrm" > Evli 
+                                <input type="radio" name="medenidurum" id="medenidrm" checked > Bekar
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Cinsiyet :</td>
+                            <td>
+                                <input type="radio" name="cinsiyet" id="cinsiyet" checked > Erkek
+                                <input type="radio" name="cinsiyet" id="cinsiyet"> Kadın
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <input type="checkbox" name="Abone" id="" checked > Bültene Abone ol
+                                <br>
+
+                            </td>
+                        </tr>
+                    </table>
+            </fieldset>
+        </form>
+        <br>
+        <form name="secenekkutusu" >
+            <fieldset style="width: fit-content; height:fit-content;" >
+                <legend>Combobox - Seçenek kutusu</legend>
+                Doğum Yeri :
+                <select name="Dogum_yeri" id="" style="height: 25px;">
+                    <option value="ankara">Ankara</option>
+                    <option value="istanbul">İstanbul</option>
+                    <option value="adana">Adana</option>
+                    <option value="izmir">İzmir</option>
+                    <option value="diyarbakır" selected>Diyarbakır</option>
+                </select>
+                <br><br>
+                Tuttuğunuz Takım :
+                <select name="takim" id="takim" style="height: 25px;" >
+                    <option selected>Galatasaray</option>
+                    <option>Beşiktaş</option>
+                    <option>Fenerbahçe</option>
+                </select>
+                <br><br>
+                <input type="submit" value="Gönder"> <input type="reset" value="Temizle">
+                
+                <input type="image" src="img\submit2.png" alt="" height="55"> 
+            </fieldset>
+
+        </form>
+        
+    </body>
+</html>
