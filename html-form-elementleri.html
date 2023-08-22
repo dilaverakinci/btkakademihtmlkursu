@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Form Elemanları</title>
+    </head>
+    <body>
+        <form action="/action_page.php">
+            <input list="arabalar" name="araba">
+            <datalist id="arabalar">
+                <option value="Mercedes">
+                <option value="Audi">
+                <option value="BMW">
+                <option value="Ford">
+                <option value="Volvo">
+            </datalist>
+            <input type="submit" value="Gönder">
+        </form><br>
+        
+        <!-- Başka bir örnek -->
+        
+        <form 
+            action="" name="tarayıcılar" target="_blank" method="get" autocomplete="on" 
+            accept-charset="UTF-8" novalidate >
+            
+                <!-- action : Bir form gönderildiğinde form verilerinin nereye gönderileceğini belirtir. -->
+                <!-- target : Form gönderildikten sonra alınan yanıtın nereye gösterileceğini belirtir. -->
+                    <!-- _blank : Yanıt yeni bir pencerede veya sekmede görüntülenir. -->
+                    <!-- _self : Yanıt mevcut pencerede görüntülenir.-->
+                    <!-- _parent : Yanıt ana çerçevede görüntülenir.-->
+                    <!-- _top : Yanıt pencerenin tamamı boyunca görüntülenir.-->
+                    <!-- framename : Yanıt, adlandırılmış bir iframe'de görüntülenir.-->
+                    <input list="teams" name="team">
+                    <datalist id="teams">
+                        <option value="Galatasaray">
+                        <option value="Beşiktaş">
+                        <option value="Fenerbahçe">
+                        <option value="Trabzonspor">
+                        <option value="Adana Demir Spor">
+                    </datalist>
+                    <input type="submit" value="Gönder">
+                    <input type="reset" value="Temizle">
+    
+        </form>
+        
+    </body>
+</html>
