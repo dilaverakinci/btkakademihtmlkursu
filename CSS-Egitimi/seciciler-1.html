@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <title>* Seçicisi</title>
+        <meta name="description" content="* Seçicisi, css, seçiciler">
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name ="viewport" content="width-device-width, initial-scale=1.0">
+        
+        <!-- CSS * seçicisi tüm kodlara uygulanır -->
+        <Style>
+            *{ /* Sayfadaki herşeye uygulanır. */
+                color: green;
+            }
+            h1{ /* h1 etiketine uygulanacak. */
+                color: blue;
+            }
+            p{
+                /* p etiketine kırmızı renk uygular*/
+                color: darkred;
+            }
+            #pr1{ /*pr1 id'sine menekşemavisi rengi uygular */
+                color: blueviolet;
+            }
+            #pr2{ /*pr2 id'sine koyu zeytin yeşili rengini uygular */
+                color:darkolivegreen;
+                font-weight: bold;
+            }
+
+            .italik-mavi{
+                color: blue;
+                font-style: italic;
+                background-color: antiquewhite;
+            }
+            .bold-yesil{
+                color:green;
+                font-weight: bold;
+                background-color: lightgray;
+            }
+
+        </Style>
+    </head>
+    <body>
+        <h1>Başlık Satırı </h1>
+        <p>1. Paragraf satırı</p>
+        <p>2. Paragraf satırı</p>
+        <p id="pr1"> İD'si pr1 olan paragraf satırı</p>
+        <p id="pr2"> İD'si pr2 olan paragraf satırı</p>
+        <p class="italik-mavi"> Sınıfı italik-mavi olan paragraf</p>
+        <p class="bold-yesil">Sınıfı bold-yesil olan paragraf</p>
+
+    </body>
+</html>
