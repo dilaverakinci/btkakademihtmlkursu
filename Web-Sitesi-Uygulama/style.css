@@ -14,7 +14,7 @@
    }
    #sayfa{
        width: 800px;
-       border-style: solid;
+       /*border-style: solid;*/
        border-width: 1px;
        min-height: 600px;
        margin: auto;
@@ -80,7 +80,7 @@
 
    #anamenu ul li {
        width: 80px;
-       border-style: solid;
+       /*border-style: solid;*/
        border-width: 1px;
        border-radius: 5px;
        background-color:lightblue;
@@ -127,7 +127,7 @@
    #icerik{
        /*background-color: bisque;*/
        border: 1px;
-       border-style: solid;
+       /*border-style: solid;*/
        min-height: 400px;
        width: 600px;
        float: left;
@@ -135,7 +135,7 @@
 
    #yanmenu{
        border: 1px;
-       border-style: solid;
+       /*border-style: solid;*/
        min-height: 400px;
        width: 196px;
        float: left;
